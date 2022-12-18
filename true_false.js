@@ -1,3 +1,16 @@
+//falsy
+//false
+//0
+//""
+//NaN
+//undefined
+//null
+
+//Truthy
+//[]
+//{}
+//"0"
+//' '
 const number = 0;
 
 if (number) {
