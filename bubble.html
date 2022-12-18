@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            background-color: rgba(127, 255, 212, 0.23);
+            padding: 5px;
+            margin: 10px;
+            font-family: roboto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>My List</h1>
+        <ul id="myList">
+            <li id="firstElemt" class="item">Lorem ipsum dolor sit amet.</li>
+            <li class="item">Sunt, magni ipsam? Quae, praesentium!</li>
+            <li class="item">Ratione sed neque illo quod.</li>
+            <li class="item">Doloribus ad libero hic provident!</li>
+            <li class="item">Similique, sequi! Obcaecati, dolores magnam!</li>
+        </ul>
+        <button id="itemAdd">Add item</button>
+    </div>
+    <script>
+        // var items = document.getElementsByClassName('item');
+        // for(let i = 0; i<items.length; i++){
+        //     var item = items[i];
+        //     item.addEventListener('click', function(event){
+        //         event.target.parentNode.removeChild(event.target);
+        //     })
+        // }
+
+        document.getElementById('itemAdd').addEventListener('click', function(){
+            var patentItem = document.getElementById('myList');
+            var addNewElement = document.createElement('li');
+            addNewElement.innerText = 'New Item Added';
+            patentItem.appendChild(addNewElement);
+        })
+
+        document.getElementById('myList').addEventListener('click', function () {
+                event.target.parentNode.removeChild(event.target);
+
+            })
+
+        // document.getElementById('container').addEventListener('click', function(){
+        //     console.log('container clicked');
+        //     event.stopPropagation();
+        // })
+        
+        // document.getElementById('firstElemt').addEventListener('click', function () {
+        //         console.log('li clicked');
+                
+        //     })
+    </script>
+</body>
+</html>

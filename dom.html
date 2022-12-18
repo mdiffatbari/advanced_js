@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            border: 1px solid tomato;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <article id="test">
+        <h1>article-1</h1>
+        <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio magni odit facere praesentium. Sapiente hic cum mollitia? Dignissimos dolore porro, eaque veniam consequuntur ipsa, dicta pariatur ad nihil quasi error ipsam doloremque velit. Eaque voluptates quisquam quae repellat accusamus assumenda architecto culpa, autem molestiae nostrum, velit praesentium aut laudantium voluptatibus!
+            <p class="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi veritatis impedit quis officia tempore quia sit saepe, illo hic consectetur?</p>
+        </p>
+    </article>
+    <article>
+        <h1>article-2</h1>
+        <p class="description">
+            Amet dolorem iure ipsum, porro minima adipisci. Quae reprehenderit pariatur mollitia error praesentium ex temporibus debitis sapiente est vero ipsum laudantium nemo illo unde laboriosam cumque, neque itaque fuga beatae iusto. Est quis alias ab tempore nostrum repellat, eius ducimus doloremque delectus a itaque beatae, libero qui voluptas, fuga nesciunt?
+            <p class="des">Modi, earum facere ut tenetur voluptates nesciunt dolorem quo, quibusdam totam culpa atque voluptate. Quibusdam distinctio dolores beatae aut quasi!</p>
+        </p>
+    </article>
+    <article>
+        <h1>article-3</h1>
+        <p class="description">
+            Sint similique, atque temporibus dolorum rerum, quidem in cum dolore recusandae sed dolor. Asperiores porro suscipit obcaecati explicabo dolores ea vel distinctio id nam. Saepe eum delectus illo nobis repellendus, eligendi enim blanditiis debitis voluptatum minus dicta architecto id in corporis! Beatae, ipsa accusamus. Quasi porro magni deserunt cumque et!
+            <p class="des">Aliquid repudiandae maiores fugit maxime autem? Inventore quod error voluptates incidunt unde, culpa assumenda provident, pariatur eum ab, modi tempora!</p>
+        </p>
+    </article>
+
+    <script>
+        var articleOne = document.getElementById('test');
+        var addElement = document.createElement('h6');
+        addElement.innerHTML = 'Added By javaScript';
+        articleOne.appendChild(addElement);
+    </script>
+</body>
+</html>
